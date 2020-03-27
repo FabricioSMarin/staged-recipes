@@ -13,11 +13,11 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: "{{ PYTHON }} -m pip install ."
 
 requirements:
   host:
-    - python >=3
+    - python =3.6
     - pip
   run:
     - dxchange
@@ -28,7 +28,7 @@ requirements:
     - pandas
     - pyqt >=5
     - pyqtgraph
-    - python >=3
+    - python =3.6
     - scipy
     - seaborn
     - setuptools
